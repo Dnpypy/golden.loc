@@ -153,8 +153,10 @@ a, a:hover {text-decoration: none;}
     color: #fff;
     background: #fed136;
     text-transform: uppercase;
+    border: none;  /* Убираем обводку у кнопки  */
+    
     cursor: pointer;
-
+    color: #fff;
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
         -ms-border-radius: 4px;
@@ -189,14 +191,16 @@ h5.title {
 }
 
 .descr {
-    font: italic 16px/16px 'Droid Serif', serif;
+    font-size: 16px;
     color: #808080;
     margin-bottom: 10px;
 }
 
 .services-wrap,
 .portfolio-wrap,
-.about-wrap {
+.about-wrap,
+.team-wrap,
+#message {
     padding-top: 70px;
 }
 
@@ -226,7 +230,7 @@ h5.title {
     background: url(../img/security.jpg) no-repeat center top;
 }
 
-#portfolio {
+#portfolio, #team {
     text-align: center;
     background: #f7f7f7;
 }
@@ -258,6 +262,253 @@ h5.title {
     margin-bottom: 6px;
 }
 
-#about  {
+#about  {text-align: center;}
+
+.about-text {
+    width: 35%;
+   
+}
+
+.about-img {
+    width: 30%;
+    
+}
+
+.about-text h5 { 
+    font: bold 18px/24px 'Montserrat', sans-serif;
+}
+
+
+.about-text h5 span{
+    text-transform: uppercase; 
+}
+
+.about-text p { 
+    color: #777;
+    font: 14px/24px 'Roboto Slab', serif;
+}
+
+.about-img {
+    width: 30%;
+    
+}
+
+.about-img:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 3px;
+    height: 94px;
+    background: #f1f1f1;
+}
+
+.about-img img, .about-link {
+    display: inline-block;
+    width: 177px;
+    height: 177px;
+    border: 7px solid #f1f1f1;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.about-link {
+    background: #fed136;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font: bold 18px/27px 'Montserrat', sans-serif;
+    padding-top: 34px;
+
+    -webkit-text-shadow: 0 1px  rgba(0, 0, 0, .3);
+    -moz-text-shadow: 0 1px  rgba(0, 0, 0, .3);
+    -ms-text-shadow: 0 1px  rgba(0, 0, 0, .3);
+    -o-text-shadow: 0 1px  rgba(0, 0, 0, .3);
+    text-shadow: 0 1px  rgba(0, 0, 0, .3);
+}
+
+.team-item {
+    float: left;
+    width: 33.33%;
+    padding: 0px 10px;
+}
+
+.team-item img{
+    border: 7px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+}
+
+.team-info {
+    margin-top: 45px;
+    
+}
+
+
+.cat {
+    font: 14px/14px 'Roboto Slab', serif;
+    color: #777;
+
+}
+
+.social  {
+    margin-top: 10px;
+}
+
+.social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0 3px;
+    border: 3px solid #222;
+    background: url(../img/social-sprite.png) no-repeat;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.social a.black {
+    background-color: #222;
+}
+
+.social a.ic-tw {background-position: 0 0 ;}
+
+.social a.ic-tw:hover {
+    border-color: #00aced ;
+    background-color: #00aced;
+    background-position: 0 -40px ;
+}
+
+.social a.ic-tw.black {background-position: 0 -40px ;}
+
+.social a.ic-fb {
+    background-position: -41px 0;
+}
+
+.social a.ic-fb:hover {
+    border-color: #3b5998 ;
+    background-color: #3b5998;
+    background-position: -40px -40px;
+}
+
+.social a.ic-fb.black {background-position: -40px -40px ;}
+
+.social a.ic-pn {
+    background-position: -80px 0;
+}
+
+.social a.ic-pn:hover {
+    border-color: #cb2028 ;
+    background-color: #cb2028;
+    background-position: -80px -40px ;
+}
+
+.social a.ic-pn.black {background-position: -80px -40px ;}
+
+.social a.ic-gl {
+    background-position: -120px 0;
+}
+
+.social a.ic-gl:hover {
+    border-color: #d95232 ;
+    background-color: #d95232;
+    background-position: -120px -40px ;
+}
+
+.social a.ic-gl.black {background-position: -120px -40px ;}
+
+#brand {
+    padding: 60px 0;
     text-align: center;
+}
+
+#brand a {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+#brand a:last-child { margin-right: none;}
+#brand img {vertical-align: middle;}
+
+#contact {
+    text-align: center;
+    background: #222 url(../img/maps-bg.png) no-repeat right bottom;
+}
+
+#contact h2.title {
+    color: #fff;
+    font: bold 40px/40px 'Montserrat', sans-serif;
+} 
+
+#message .left,
+#message .right {
+    width: 48%;
+}
+
+#message input[type="text"],
+#message textarea {
+    background: #fff;
+    width: 100%;
+    padding: 15px 20px;
+
+    margin-bottom: 30px;
+    font-size: 15px;
+
+    color: #222;
+    box-shadow: 
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+    
+}
+
+#message input[type="text"] {
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+#message textarea {
+    height: 210px;
+    border: none;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font: bold 14px/14px 'Montserrat', sans-serif;
+    color: #bbb;
+}
+
+::-moz-placeholder {
+    text-transform: uppercase;
+    font: bold 14px/14px 'Montserrat', sans-serif;
+    color: #bbb;
+}
+
+#copyright {
+    padding: 25px 0;
+}
+
+#copyright p {
+    margin-top: 13px;
+    font: regular 14px/14px 'Montserrat', sans-serif;
+    color: #555;
+}
+
+#copyright .social {
+    margin-top: 0;
+    margin-left: 365px;
 }
